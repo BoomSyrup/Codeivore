@@ -16,6 +16,8 @@ var startLineGo = 0;
 var normalEnd = 21;
 var startLineStop = 30;
 
+var startText = 55;
+
 function setup() {
 	createCanvas(windowWidth,windowHeight);
 	frameRate(10);
@@ -30,7 +32,7 @@ function draw() {
 	fill(230,230,230);
 	textSize(15);
 	textFont( numberFont );
-	text('		 1', 0, 25);
+	text('	  1', 0, 25);
 	for( var i = 1 ; i < numFit - 2; ++i ) {
 		text('	~', 0 , numberHeight * (i + 1));
 	}
@@ -81,7 +83,7 @@ function draw() {
 		else {
 			fill(230,230,230);
 		}
-		rect(80, 10, 10.2, 18);
+		rect(startText, 10, 10.2, 18);
 	}
 	else {
 		if( startLineGo == startLineStop ) {
@@ -109,16 +111,16 @@ function draw() {
 			textSize(17);
 			textFont(numberFont);
 			currString += textAnimation.charAt(index);
-			text(currString, 80, 25);
+			text(currString, startText, 25);
 			cursorWidth = textWidth(textAnimation.substring(1,2));
-			rect(80 + textWidth(currString), 10, cursorWidth, 18);
+			rect(startText + textWidth(currString), 10, cursorWidth, 18);
 			index++;
 		}
 		else {
 			fill(230,230,230);
 			textSize(17);
 			textFont(numberFont);
-			text(textAnimation, 80,25);
+			text(textAnimation, startText,25);
 			currBlink++;
 			if( currBlink == maxBlink ) {
 				currBlink = 0;
@@ -130,7 +132,7 @@ function draw() {
 			else {
 				fill(230,230,230);
 			}
-			rect(80 + textWidth(currString), 10, cursorWidth , 18);
+			rect(startText + textWidth(currString), 10, cursorWidth , 18);
 		}
 	}
 }
