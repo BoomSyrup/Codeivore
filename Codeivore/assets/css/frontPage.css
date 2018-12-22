@@ -50,6 +50,7 @@ html{
   	cursor: pointer;
   	border-radius: 15px;
   	text-align: center;
+  	line-height: 2.3em;
   	vertical-align: middle;
   	display: inline-block;
   	margin-left: 3em;
@@ -59,12 +60,17 @@ html{
   	font-weight: 700;
 }
 
+a {
+	text-decoration: none;
+	color: black;
+}
+
 .button:first-of-type {
 	margin-left: calc(50vw - (3*7.5em + 2*4.6em)/2);
 }
 
 .button i {
-	margin-top: 0.03em;
+	margin-top: 0.05em;
 	margin-right: 0.05em;
 }
 

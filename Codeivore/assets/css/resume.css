@@ -1,0 +1,89 @@
+body {
+	font-family: 'Roboto', sans-serif;
+	margin: 0px 0px;
+}
+
+#resume {
+	max-width: 50vw;
+	margin: 0 auto;
+}
+
+strong {
+	font-size: 1.5em;
+	color: rgb(23, 145, 240);
+}
+
+h1 {
+	text-align: center;
+	margin-bottom: 0.25em;
+	font-size: 2em;
+}
+
+h2{
+	margin-top: 0.25em;
+	text-align: center;
+	font-size: 1.5em;
+}
+
+.tab{
+	width: 4vw;
+}
+
+#nameLine{
+	margin-left: 8vw;
+	margin-right: 8vw;
+}
+
+hr{
+	margin-top: 3vh;
+	margin-bottom: 3vh;
+	margin-left: 0.5vw;
+	margin-right: 0.5vw;
+	color: rgb(23, 145, 240);
+}
+
+.project{
+	font-size: 1.1em;
+}
+
+a {
+	color: rgb(23, 145, 240);
+}
+
+#navbar {
+	margin-top: 0px;
+	padding: 1.5vh 0;
+	height: 3em;
+	background-color: rgb(240, 240, 240);
+}
+
+.button {
+	background-color: black;
+	color: white;
+	height: 2.3em;
+	width: 7.5em;
+  	cursor: pointer;
+  	border-radius: 15px;
+  	text-align: center;
+  	line-height: 2.3em;
+  	vertical-align: middle;
+  	margin-left: 3em;
+  	margin-right: 3em;
+  	font-family: 'Rosario', sans-serif;
+  	font-size: 1.2em;
+  	font-weight: 700;
+  	text-decoration: none;
+}
+
+#download {
+	position: absolute;
+	right: 19.5vw;
+}
+
+i {
+	position: absolute;
+	font-size: 2.5em;
+	left: 25vw;
+	color: rgb(0, 0, 0);
+}
+
