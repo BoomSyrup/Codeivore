@@ -4,7 +4,6 @@ import (
    "net/http"
    "path"
    "path/filepath"
-   "fmt"
    "os"
    "strings"
 )
@@ -37,7 +36,6 @@ func redirectHtml(w http.ResponseWriter, r *http.Request, servePath string) {
 		_, fileName := filepath.Split(servePath)
 		//strip the .html from the file name
 		servePath = "./" + strings.TrimSuffix(fileName,".html")
-		fmt.Printf("Redirecting...\t%v\n",servePath)
 		//redirect to the file requested without the .html extension
 		http.Redirect(w,r,servePath,301)
 		return
@@ -64,7 +62,6 @@ func processRequest(w http.ResponseWriter, r *http.Request, servePath string){
 	}else if fileOriginal.IsDir(){
 		servePath = filepath.Join(servePath, "index.html")	
 	}
-	fmt.Printf("Serving...\t%v\n",servePath)
 	//if you could find the file without .html added, the condition falls
 	//through and you can just serve the file, otherwise, the servePath
 	//has been modified to serve the correct file 
