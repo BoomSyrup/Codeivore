@@ -103,6 +103,10 @@ body p {
 	transform: translate(-50%, 0%);
 	}
 
+	#face {
+		bottom: 60%;
+	}
+
 	body p{
 		font-size: 1.2em;
 	}
