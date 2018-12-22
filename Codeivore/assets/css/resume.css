@@ -87,3 +87,7 @@ i {
 	color: rgb(0, 0, 0);
 }
 
+ul{
+	margin-top: 0.5vh;
+	margin-bottom: 0px;
+}
