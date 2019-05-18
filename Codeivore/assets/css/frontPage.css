@@ -30,7 +30,7 @@ html{
 
 #name {
 	position: relative;
-	top: -36%;
+	top: -32%;
 	text-align: center;
 	font-size: 3.1em;
 	color: black;
@@ -101,10 +101,6 @@ body p {
 	.button:first-of-type {
 	margin-left: 50vw;
 	transform: translate(-50%, 0%);
-	}
-
-	#name {
-		top: -30%;
 	}
 
 	body p{
